@@ -1,0 +1,19 @@
+.Button {
+  border: none;
+  position: fixed;
+  top: 24px;
+  right: 20px;
+  height: 34px;
+  width: 60px;
+  font-family: "Figtree", "Noto Sans Thai", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: var(--backdrop-40);
+  color: var(--text-light);
+  z-index: 20;
+  font-weight: 600;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}

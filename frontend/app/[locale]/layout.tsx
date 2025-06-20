@@ -4,6 +4,7 @@ import { NextIntlClientProvider, useMessages } from "next-intl";
 import { getMessages } from "next-intl/server";
 import type { ReactNode } from "react";
 import Nav from "@/components/Nav/Nav";
+import LanguageSwitcher from "@/components/LanguageSwitcher/LanguageSwitcher";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,6 +26,7 @@ export default async function RootLayout({
          <NextIntlClientProvider locale={locale} messages={messages}>
         {children}
         <div className="scrolledgeTop" />
+        <LanguageSwitcher />
         <Nav />
         </NextIntlClientProvider>
       </body>

@@ -6,9 +6,11 @@
   --foreground: #171717;
   --primary: #e06285;
   --text-default: #333333;
+  --text-light: #666666;
   --devider: #d1d1d1;
   --border: #e4e4e4;
   --box-background: #ffffff;
+  --backdrop-40: #e5e5e566;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,9 +20,11 @@
     --foreground: #ededed;
     --primary: #e5698c;
     --text-default: #ffffff;
+    --text-light: #cccccc;
     --devider: #575757;
     --border: #444444;
     --box-background: rgb(60, 60, 60);
+    --backdrop-40: #41414166;
   }
 }
 
@@ -51,6 +55,7 @@ body {
   padding-top: 84px;
   padding-bottom: 84px;
   position: relative;
+  line-height: 150%;
 }
 
 .header {

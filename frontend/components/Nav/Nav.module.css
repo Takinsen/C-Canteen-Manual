@@ -11,8 +11,9 @@
   border: solid;
   border-width: 1px;
   border-color: var(--border);
+  overflow: hidden;
 }
-.containerMobileInactive{
+.containerMobileInactive {
   position: fixed;
   z-index: 1000;
   top: 24px;
@@ -22,9 +23,41 @@
   background-color: var(--box-background);
   border-radius: 18px;
   box-shadow: 0px 2px 19px rgba(0, 0, 0, 0.07);
-  border: solid;
-  border-width: 1px;
-  border-color: var(--border);
+  border: 1px solid var(--border);
+  transition: all 0.4s cubic-bezier(0.34, 1.1, 0.8, 1);
+  overflow: hidden;
+}
+
+.containerMobileActive {
+  position: fixed;
+  z-index: 1000;
+  top: 20px;
+  left: 20px;
+  height: 200px;
+  width: 180px;
+  background-color: var(--box-background);
+  border-radius: 24px;
+  box-shadow: 0px 2px 19px rgba(0, 0, 0, 0.105);
+  border: 1px solid var(--border);
+  transition: all 0.5s cubic-bezier(0.34, 1.5, 0.7, 1);
+  animation: blurInOut 0.2s ease-in-out;
+  overflow: hidden;
+}
+@keyframes blurInOut {
+  0% {
+    filter: blur(0px);
+  }
+  30% {
+  }
+  50% {
+    filter: blur(10px);
+  }
+  90% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
 }
 .logo{
   height: 16px;
@@ -54,6 +87,43 @@
   left: 12px;
   top: 8px;
   display: none;
+}
+.logoContainerMobileActive{
+  opacity: 0;
+  scale: 1.2;
+  transition: all 0.3s cubic-bezier(0.34, 1.5, 0.7, 1);
+  position: relative;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+.logoContainerMobileInactive{
+  opacity: 1;
+  scale: 1;
+  transition: all 0.4s cubic-bezier(0.34, 1.5, 0.7, 1);
+  position: relative;
+}
+
+.contentMobileActive{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  opacity: 1;
+  margin-top: 0px;
+  box-sizing: border-box;
+  padding: 16px;
+  filter: blur(0px);
+  transition: all 0.4s cubic-bezier(0.34, 1.5, 0.7, 1);
+}
+.contentMobileInactive{
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: 30px;
+  box-sizing: border-box;
+  padding: 16px;
+  filter: blur(5px);
+  transition: all 0.4s cubic-bezier(0.34, 1.5, 0.7, 1);
 }
 
 @media (prefers-color-scheme: dark) {

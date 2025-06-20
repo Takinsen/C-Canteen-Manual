@@ -1,3 +1,24 @@
 {
-  
+  "introPage": {
+    "section1": {
+      "title": "What is C-Canteen?",
+      "paragraph": "C-Canteen is a smart canteen management system designed to enhance the dining experience by making it more convenient, faster, and efficient. It integrates AI technology and real-time data to automate key aspects of the canteen experience from detecting available seating and ordering food from vendors, to payment and order tracking. Everything is combined into a single, easy-to-use app that helps reduce congestion, save time, and meet the needs of modern lifestyles."
+    },
+    "section2": {
+      "title": "Goals and Benefits",
+      "bullet1": "Manage canteen seating in real time using AI that accurately detects available seats.",
+      "bullet2": "Reduce wait times and crowding with a smooth and fast in-app food ordering system.",
+      "bullet3": "Enhance user satisfaction with a more modern and organized canteen experience.",
+      "bullet4": "Help food vendors reduce errors from traditional order-taking and provide clear tracking for both parties."
+    },
+    "section3": {
+      "title": "Who is this manual for?",
+      "subtitle1": "Students and Staff",
+      "sentence1": "Using canteen services in universities, organizations, or large educational institutions who want a more convenient way to order food and find seating.",
+      "subtitle2": "Canteen Vendors",
+      "sentence2": "Looking to improve order efficiency, reduce mistakes, and adapt to digital workflows.",
+      "subtitle3": "System Admins or Support Teams",
+      "sentence3": "Who need to understand the system in order to manage and support overall usage effectively."
+    }
+  }
 }
