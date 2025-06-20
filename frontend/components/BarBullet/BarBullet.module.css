@@ -1,0 +1,47 @@
+.container{
+  width: 100%;
+  margin-bottom: 56px;
+  position: relative;
+}
+.bar{
+  width: 2px;
+  border-radius: 2px;
+  background-color: var(--text-default);
+  display: inline-block;
+  position: absolute;
+  top:8px;
+  bottom: 8px;
+  left: 0px;
+}
+.header{
+  font-weight: 800;
+  display: inline-block;
+}
+.descfull{
+  width: 100%;
+  display: inline-block;
+  margin-left: 12px;
+}
+.descshort{
+  width: 60%;
+  display: inline-block;
+  margin-left: 12px;
+}
+
+@media (max-width: 500px) {
+  .container{
+    margin-bottom: 24px;
+  }
+  .container{
+    gap: 24px;
+  }
+  .descshort{
+    width: 70%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .icon{
+    filter: invert(1) brightness(1.2);
+  }
+}

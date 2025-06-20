@@ -1,20 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=Noto+Sans+Thai:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=Noto+Sans+Thai:wght@100..900&display=swap");
 
 :root {
   --background: #ffffff;
+  --background-40: #ffffff66;
   --foreground: #171717;
-  --primary: #E06285;
+  --primary: #e06285;
   --text-default: #333333;
-  --devider: #D1D1D1;
+  --devider: #d1d1d1;
+  --border: #e4e4e4;
+  --box-background: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #333333;
+    --background-40: #33333366;
     --foreground: #ededed;
     --primary: #e5698c;
     --text-default: #ffffff;
     --devider: #575757;
+    --border: #444444;
+    --box-background: rgb(60, 60, 60);
   }
 }
 
@@ -40,13 +46,14 @@ body {
   padding-right: 24px;
 }
 
-.contentContainer{
+.contentContainer {
   max-width: 830px;
   padding-top: 84px;
+  padding-bottom: 84px;
   position: relative;
 }
 
-.header{
+.header {
   font-family: "RoundBold";
   font-weight: bold;
   color: var(--text-default);
@@ -54,27 +61,32 @@ body {
   margin-bottom: 56px;
 }
 
-.image{
+.image {
   margin-bottom: 56px;
 }
 
-.paragraph{
+.paragraph {
   margin-bottom: 56px;
 }
 
-.devider{
+.devider {
   margin-bottom: 56px;
   width: 100%;
   height: 1px;
   background-color: var(--devider);
 }
 
-.scrolledgeTop{
+.scrolledgeTop {
   position: fixed;
   top: 0;
-  height: 100px; 
+  height: 100px;
   width: 100%;
-  background: linear-gradient(to bottom, var(--background) 0%, transparent 100%);
+  background: linear-gradient(
+    to bottom,
+    var(--background) 0%,
+    var(--background-40) 80%,
+    transparent 100%
+  );
   z-index: 10;
   left: 0;
   right: 0;
@@ -82,21 +94,27 @@ body {
 }
 
 @media (max-width: 500px) {
-  body{
+  body {
     font-size: 16px;
   }
-  .header{
+  .header {
     font-size: 24px;
     margin-bottom: 24px;
   }
-  .image{
+  .image {
     margin-bottom: 24px;
   }
-  .paragraph{
+  .paragraph {
     margin-bottom: 24px;
   }
-  .devider{
+  .devider {
     margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contentContainer {
+    max-width: 600px;
   }
 }
 
@@ -118,8 +136,8 @@ a {
 }
 
 @font-face {
-  font-family: 'RoundBold';
-  src: url('/fonts/RoundBold.woff2') format('woff2');
+  font-family: "RoundBold";
+  src: url("/fonts/RoundBold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }

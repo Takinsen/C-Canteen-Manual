@@ -1,0 +1,42 @@
+.container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 26px;
+  margin-bottom: 56px;
+}
+.icon{
+  width: 42px;
+  height: 42px;
+  filter: invert(0);
+}
+
+.descfull{
+  width: 100%;
+}
+.descshort{
+  width: 60%;
+}
+
+@media (max-width: 500px) {
+  .container{
+    margin-bottom: 24px;
+  }
+  .icon{
+    width: 32px;
+    height: 32px;
+  }
+  .container{
+    gap: 24px;
+  }
+  .descshort{
+    width: 70%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .icon{
+    filter: invert(1) brightness(1.2);
+  }
+}

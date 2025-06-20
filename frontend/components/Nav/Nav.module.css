@@ -1,0 +1,73 @@
+.containerDeaktop{
+  position: fixed;
+  z-index: 1000;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  width: 190px;
+  background-color: var(--box-background);
+  border-radius: 18px;
+  box-shadow: 0px 2px 19px rgba(0, 0, 0, 0.07);
+  border: solid;
+  border-width: 1px;
+  border-color: var(--border);
+}
+.containerMobileInactive{
+  position: fixed;
+  z-index: 1000;
+  top: 24px;
+  left: 20px;
+  height: 34px;
+  width: 112px;
+  background-color: var(--box-background);
+  border-radius: 18px;
+  box-shadow: 0px 2px 19px rgba(0, 0, 0, 0.07);
+  border: solid;
+  border-width: 1px;
+  border-color: var(--border);
+}
+.logo{
+  height: 16px;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  display: block;
+}
+.logoDark {
+  height: 16px;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  display: none;
+}
+
+.logoMobile{
+  height: 16px;
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  display: block;
+}
+.logoMobileDark {
+  height: 16px;
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    display: none;
+  }
+  .logoDark {
+    display: block;
+  }
+
+  .logoMobile{
+    display: none;
+}
+.logoMobileDark {
+    display: block;
+}
+}
