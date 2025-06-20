@@ -112,6 +112,7 @@
   box-sizing: border-box;
   padding: 16px;
   filter: blur(0px);
+  font-size: 20px;
   transition: all 0.4s cubic-bezier(0.34, 1.5, 0.7, 1);
 }
 .contentMobileInactive{
@@ -123,6 +124,7 @@
   box-sizing: border-box;
   padding: 16px;
   filter: blur(5px);
+  font-size: 20px;
   transition: all 0.4s cubic-bezier(0.34, 1.5, 0.7, 1);
 }
 
