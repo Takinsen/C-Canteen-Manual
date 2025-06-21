@@ -1,12 +1,33 @@
 'use client';
 import { useMedia } from 'use-media';
 import style from './Nav.module.css';
-import { useState, useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
+import Item from './components/Item/Item';
+import { useRouter, usePathname } from 'next/navigation';
 
 export default function Nav() {
+  const router = useRouter();
+  const pathname = usePathname();
   const isMobile = useMedia({ maxWidth: 900 });
   const [isActive, setIsActive] = useState(false);
   const mobileRef = useRef<HTMLDivElement>(null);
+
+  const getTabLanguage = () => {
+    if (pathname?.includes('en')) return 'en';
+    else return 'th';
+  }
+  const getTabIndex = () => {
+    if (pathname?.includes('/smartseating')) return 1;
+    if (pathname?.includes('/orderingfood')) return 2;
+    if (pathname?.includes('/payment')) return 3;
+    return 0; 
+  };
+
+  const tabIndex = getTabIndex();
+
+  const handleSelect = (path: string) => {
+    router.push(path);
+  };
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -35,26 +56,27 @@ export default function Nav() {
       onClick={() => setIsActive(true)}
     >
       <div className={isActive ? style.logoContainerMobileActive : style.logoContainerMobileInactive}>
-      <img className={style.logoMobile} src="/logos/logoShort.svg" />
-      <img className={style.logoMobileDark} src="/logos/logoShort-dark.svg" />
+        <img className={style.logoMobile} src="/logos/logoShort.svg" />
+        <img className={style.logoMobileDark} src="/logos/logoShort-dark.svg" />
       </div>
       <div className={isActive ? style.contentMobileActive : style.contentMobileInactive }>
-        Intro <br />
-        Seat <br />
-        Order <br />
-        Payment <br />
-        Manage <br />
-        Intro <br />
-        Seat <br />
-        Order <br />
-        Payment <br />
-        Manage <br />
+        <Item text="Introduction" onClick={() => handleSelect(`/${getTabLanguage()}`)} selected={tabIndex === 0} iconPath="/icons/book-marked.svg" />
+        <Item text="Smart Seating" onClick={() => handleSelect("/smartseating")} selected={tabIndex === 1} iconPath="/icons/armchair.svg" />
+        <Item text="Ordering Food" onClick={() => handleSelect("/orderingfood")} selected={tabIndex === 2} iconPath="/icons/ticket.svg" />
+        <Item text="Payment" onClick={() => handleSelect("/payment")} selected={tabIndex === 3} iconPath="/icons/scan-line.svg" />
       </div>
     </div>
   ) : (
     <div className={style.containerDeaktop}>
       <img className={style.logo} src="/logos/logoLong.svg" />
       <img className={style.logoDark} src="/logos/logoLong-dark.svg" />
+      <div className={style.devider} />
+      <div className={style.contentDesktop}>
+        <Item text="Introduction" onClick={() => handleSelect(`/${getTabLanguage()}`)} selected={tabIndex === 0} iconPath="/icons/book-marked.svg" />
+        <Item text="Smart Seating" onClick={() => handleSelect("/smartseating")} selected={tabIndex === 1} iconPath="/icons/armchair.svg" />
+        <Item text="Ordering Food" onClick={() => handleSelect("/orderingfood")} selected={tabIndex === 2} iconPath="/icons/ticket.svg" />
+        <Item text="Payment" onClick={() => handleSelect("/payment")} selected={tabIndex === 3} iconPath="/icons/scan-line.svg" />
+      </div>
     </div>
   );
 }

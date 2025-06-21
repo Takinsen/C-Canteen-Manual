@@ -20,5 +20,12 @@
       "subtitle3": "System Admins or Support Teams",
       "sentence3": "Who need to understand the system in order to manage and support overall usage effectively."
     }
+  },
+  "smartSeatingPage": {
+  "section1": {
+    "title": "LIVE Smart Seating System",
+    "paragraph": "C-Canteen’s Smart Seating System leverages artificial intelligence (AI) and sensor cameras to detect the real-time availability of seats in the canteen. The system accurately and continuously updates the status of each seat whether it is occupied or available directly within the application. This enables users to instantly locate and select an available seat, reducing the hassle of wandering around and enhancing the overall efficiency and convenience of the canteen experience."
   }
+}
+
 }

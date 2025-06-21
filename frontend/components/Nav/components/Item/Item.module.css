@@ -1,0 +1,41 @@
+.icon{
+  width: 20px;
+  height: 20px;
+  filter: grayscale();
+}
+.iconSelected{
+  width: 20px;
+  height: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .icon{
+    filter: grayscale() brightness(1.3);
+  }
+  .iconSelected{
+    filter:  brightness(1.3) saturate(0.8);
+  }
+}
+
+.container{
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 8px;
+  font-size: 16px;
+  font-family: "RoundBold";
+  color: var(--text-light);
+  cursor: pointer;
+}
+.containerSelected{
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 8px;
+  font-size: 16px;
+  font-family: "RoundBold";
+  color: var(--primary);
+  cursor: pointer;
+}
