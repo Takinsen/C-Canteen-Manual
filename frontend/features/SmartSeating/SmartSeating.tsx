@@ -110,6 +110,8 @@ const SmartSeating = () => {
         bigIcon={true}
         autoInvert={false}
       />
+
+      <div className="footer"/>
     </div>
   );
 };

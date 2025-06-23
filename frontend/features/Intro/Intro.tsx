@@ -70,7 +70,7 @@ const Intro = () => {
         fullWidth={false}
       />
 
-        
+      <div className="footer"/>
     </div>
   );
 };
