@@ -22,10 +22,27 @@
     }
   },
   "smartSeatingPage": {
-  "section1": {
-    "title": "LIVE Smart Seating System",
-    "paragraph": "C-Canteen’s Smart Seating System leverages artificial intelligence (AI) and sensor cameras to detect the real-time availability of seats in the canteen. The system accurately and continuously updates the status of each seat whether it is occupied or available directly within the application. This enables users to instantly locate and select an available seat, reducing the hassle of wandering around and enhancing the overall efficiency and convenience of the canteen experience."
+    "section1": {
+      "title": "LIVE Smart Seating System",
+      "paragraph": "C-Canteen’s Smart Seating System leverages artificial intelligence (AI) and sensor cameras to detect the real-time availability of seats in the canteen. The system accurately and continuously updates the status of each seat whether it is occupied or available directly within the application. This enables users to instantly locate and select an available seat, reducing the hassle of wandering around and enhancing the overall efficiency and convenience of the canteen experience."
+    },
+    "section2": {
+      "title": "Accessing the System",
+      "paragraph": "Users can view the smart seating system by tapping the “Layout” button located on each canteen card or in the detailed page of the respective canteen. The Layout button displays one of the following three statuses:",
+      "bullet1": "AI Available: Seating map with AI-powered real-time seat detection",
+      "bullet2": "Map Only: Seating map available, but without AI functionality",
+      "bullet3": "No Data: No seating map or AI data available"
+    },
+    "section3": {
+      "title": "System Controls and Usage",
+      "paragraph": "Users can control the view of the canteen layout by using the + and – buttons or performing pinch-to-zoom gestures to zoom in and out. Additionally, the Recenter button returns the view to its default state, and the Full Screen button allows users to view the layout in full screen mode."
+    },
+    "section4": {
+      "title": "Seat Status Information",
+      "bullet1": "Green: The table is available or has no more than 2 people. Ideal for individuals or those seeking a quiet spot.",
+      "bullet2": "Yellow: 3–5 people are seated. The table is moderately occupied and may still have space.",
+      "bullet3": "Red: More than 5 people are seated. The table is full or nearly full and not recommended.",
+      "bullet4": "Gray: The system cannot retrieve data from the cameras or sensors in this area, so seat status cannot be displayed."
+    }
   }
-}
-
 }

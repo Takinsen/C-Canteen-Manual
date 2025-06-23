@@ -1,0 +1,5 @@
+<svg width="24" height="38" viewBox="0 0 24 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="6" y="38" width="38" height="11" rx="1" transform="rotate(-90 6 38)" fill="#FF3B30"/>
+<path d="M1 38C0.447715 38 -1.95703e-08 37.5523 -4.37114e-08 37L-1.61732e-06 1C-1.64146e-06 0.447716 0.447714 -1.95703e-08 0.999998 -4.37114e-08L3 -1.31134e-07C3.55228 -1.55275e-07 4 0.447715 4 1L4 37C4 37.5523 3.55229 38 3 38L1 38Z" fill="#FF3B30" fill-opacity="0.46"/>
+<rect x="19" y="38" width="38" height="4" rx="1" transform="rotate(-90 19 38)" fill="#FF3B30" fill-opacity="0.46"/>
+</svg>

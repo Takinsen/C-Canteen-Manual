@@ -11,6 +11,12 @@
   height: 42px;
   filter: invert(0);
 }
+.bigIcon{
+  width: 42px;
+  height: 42px;
+  filter: invert(0);
+  scale: 1.5;
+}
 
 .descfull{
   width: 100%;
@@ -27,6 +33,10 @@
     width: 32px;
     height: 32px;
   }
+  .bigIcon{
+    width: 32px;
+    height: 32px;
+  }
   .container{
     gap: 24px;
   }
@@ -37,6 +47,9 @@
 
 @media (prefers-color-scheme: dark) {
   .icon{
+    filter: invert(1) brightness(1.2);
+  }
+  .bigIcon{
     filter: invert(1) brightness(1.2);
   }
 }
