@@ -1,7 +1,7 @@
 .containerDeaktop{
   position: fixed;
   z-index: 1000;
-  top: 20px;
+  top: 16px;
   left: 20px;
   bottom: 20px;
   width: 190px;
@@ -16,7 +16,7 @@
 .containerMobileInactive {
   position: fixed;
   z-index: 1000;
-  top: 24px;
+  top: 16px;
   left: 20px;
   height: 34px;
   width: 112px;
@@ -150,13 +150,13 @@
 
 .devider {
   position: absolute;
-  top: 40px;
-  left: 18px;
-  right: 18px;
-  height: 2px;
-  border-radius: 2px;
-  background-color: var(--devider);
-  opacity: 0.3;
+  top: 6px;
+  left: 7px;
+  right: 7px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: var(--text-default);
+  opacity: 0.04;
 }
 
 @media (prefers-color-scheme: dark) {

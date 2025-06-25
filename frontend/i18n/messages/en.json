@@ -44,5 +44,33 @@
       "bullet3": "Red: More than 5 people are seated. The table is full or nearly full and not recommended.",
       "bullet4": "Gray: The system cannot retrieve data from the cameras or sensors in this area, so seat status cannot be displayed."
     }
+  },
+  "storeDashboardPage": {
+    "section1": {
+      "title": "Dashboard Store Main Page",
+      "paragraph": "The dashboard is the main page of the system for stores, designed to allow them to quickly view important information all in one place. This includes daily sales, revenue, the number of orders, and an overall summary of the store’s performance. Additionally, there are buttons to access other features such as menu management, order viewing, and slip uploads, enabling stores to conveniently and comprehensively manage their operations in one location."
+    },
+    "section2": {
+      "title": "Daily Summary Information of the Store",
+      "paragraph": "The daily summary card clearly displays key information about the store each day, including daily revenue graphs, currently popular menus during that time, and the total number of orders received. This helps stores easily track sales performance and plan their operations more effectively."
+    },
+    "section3": {
+      "title": "Feature Buttons",
+      "paragraph": "On the store’s main page, there are four primary feature buttons designed to help stores manage their business comprehensively and conveniently. Each button is user-friendly, with intuitive icons, allowing quick access to manage various sections immediately.",
+      "subtitle1": "Queue Management",
+      "sentence1": "Used to check and prioritize the order queue for each day. Stores can see the status of each order, such as waiting, in progress, or ready for delivery, enabling efficient time management.",
+      "subtitle2": "Menu Management",
+      "sentence2": "Used to add, edit, or delete the store’s food menu. Stores can set menu names, prices, categories, and availability status so that customers always see the most up-to-date menu.",
+      "subtitle3": "Promotion Management",
+      "sentence3": "Used to create and manage various promotions such as discounts, buy-one-get-one offers, or discount codes to attract customers and boost sales.",
+      "subtitle4": "Store Settings",
+      "sentence4": "Used to customize store information such as the store name, opening hours, and store images to increase credibility and maintain a well-organized profile."
+    }
+  },
+  "orderManagementPage": {
+    "section1": {
+      "title": "Order Management System",
+      "paragraph": "The C-Canteen order management system allows stores to efficiently and systematically handle orders. Stores can accept or reject orders based on their readiness, view real-time order details including menus ordered, order time, and additional information. Furthermore, stores can access the order history to analyze sales data or review repeat orders conveniently. The system also supports prioritizing orders by sorting them according to time or status, enabling efficient management of food preparation queues."
+    }
   }
 }

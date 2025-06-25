@@ -14,13 +14,16 @@ export default function Nav() {
   const mobileRef = useRef<HTMLDivElement>(null);
 
   const getTabLanguage = () => {
-    if (pathname?.includes('en')) return 'en';
+    if (pathname?.includes('/en')) return 'en';
     else return 'th';
   }
   const getTabIndex = () => {
     if (pathname?.includes('/smartseating')) return 1;
     if (pathname?.includes('/orderingfood')) return 2;
     if (pathname?.includes('/payment')) return 3;
+    if (pathname?.includes('/storedashboard')) return 4;
+    if (pathname?.includes('/ordermanagement')) return 5;
+    if (pathname?.includes('/menumanagement')) return 6;
     return 0; 
   };
 
@@ -67,13 +70,16 @@ export default function Nav() {
         <Item text="Ordering Food" onClick={() => handleSelect("/orderingfood")} selected={tabIndex === 2} iconPath="/icons/ticket.svg" />
         <Item text="Payment" onClick={() => handleSelect("/payment")} selected={tabIndex === 3} iconPath="/icons/scan-line.svg" />
         <SectionHeader text="Vendor"/>
+        <Item text="Dashboard" onClick={() => handleSelect("/storedashboard")} selected={tabIndex === 4} iconPath="/icons/chart-spline.svg" />
+        <Item text="Manage Order" onClick={() => handleSelect("/ordermanagement")} selected={tabIndex === 5} iconPath="/icons/wrap-text.svg" />
+        <Item text="Manage Menu" onClick={() => handleSelect("/menumanagement")} selected={tabIndex === 6} iconPath="/icons/utensils.svg" />
       </div>
     </div>
   ) : (
     <div className={style.containerDeaktop}>
+      <div className={style.devider} />
       <img className={style.logo} src="/logos/logoLong.svg" />
       <img className={style.logoDark} src="/logos/logoLong-dark.svg" />
-      <div className={style.devider} />
       <div className={style.contentDesktop}>
         <Item text="Introduction" onClick={() => handleSelect(`/${getTabLanguage()}`)} selected={tabIndex === 0} iconPath="/icons/book-marked.svg" />
         <SectionHeader text="User"/>
@@ -81,6 +87,9 @@ export default function Nav() {
         <Item text="Ordering Food" onClick={() => handleSelect("/orderingfood")} selected={tabIndex === 2} iconPath="/icons/ticket.svg" />
         <Item text="Payment" onClick={() => handleSelect("/payment")} selected={tabIndex === 3} iconPath="/icons/scan-line.svg" />
         <SectionHeader text="Vendor"/>
+        <Item text="Dashboard" onClick={() => handleSelect("/storedashboard")} selected={tabIndex === 4} iconPath="/icons/chart-spline.svg" />
+        <Item text="Manage Order" onClick={() => handleSelect("/ordermanagement")} selected={tabIndex === 5} iconPath="/icons/wrap-text.svg" />
+        <Item text="Manage Menu" onClick={() => handleSelect("/menumanagement")} selected={tabIndex === 6} iconPath="/icons/utensils.svg" />
       </div>
     </div>
   );
