@@ -4,6 +4,7 @@ import style from './Nav.module.css';
 import { useRef, useEffect, useState } from 'react';
 import Item from './components/Item/Item';
 import { useRouter, usePathname } from 'next/navigation';
+import SectionHeader from './components/SectionHeader/SectionHeader';
 
 export default function Nav() {
   const router = useRouter();
@@ -61,9 +62,11 @@ export default function Nav() {
       </div>
       <div className={isActive ? style.contentMobileActive : style.contentMobileInactive }>
         <Item text="Introduction" onClick={() => handleSelect(`/${getTabLanguage()}`)} selected={tabIndex === 0} iconPath="/icons/book-marked.svg" />
+        <SectionHeader text="User"/>
         <Item text="Smart Seating" onClick={() => handleSelect("/smartseating")} selected={tabIndex === 1} iconPath="/icons/armchair.svg" />
         <Item text="Ordering Food" onClick={() => handleSelect("/orderingfood")} selected={tabIndex === 2} iconPath="/icons/ticket.svg" />
         <Item text="Payment" onClick={() => handleSelect("/payment")} selected={tabIndex === 3} iconPath="/icons/scan-line.svg" />
+        <SectionHeader text="Vendor"/>
       </div>
     </div>
   ) : (
@@ -73,9 +76,11 @@ export default function Nav() {
       <div className={style.devider} />
       <div className={style.contentDesktop}>
         <Item text="Introduction" onClick={() => handleSelect(`/${getTabLanguage()}`)} selected={tabIndex === 0} iconPath="/icons/book-marked.svg" />
+        <SectionHeader text="User"/>
         <Item text="Smart Seating" onClick={() => handleSelect("/smartseating")} selected={tabIndex === 1} iconPath="/icons/armchair.svg" />
         <Item text="Ordering Food" onClick={() => handleSelect("/orderingfood")} selected={tabIndex === 2} iconPath="/icons/ticket.svg" />
         <Item text="Payment" onClick={() => handleSelect("/payment")} selected={tabIndex === 3} iconPath="/icons/scan-line.svg" />
+        <SectionHeader text="Vendor"/>
       </div>
     </div>
   );
