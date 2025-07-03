@@ -3,17 +3,16 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import IconBullet from "@/components/IconBullet/IconBullet";
 import BarBullet from "@/components/BarBullet/BarBullet";
-import Notice from "@/components/Notice/Notice";
 
-const Ordermanagement = () => {
-  const t = useTranslations("orderManagementPage");
+const Menumanagement = () => {
+  const t = useTranslations("menuManagementPage");
 
   return (
     <div className="contentContainer">
       <h2 className="header">{t("section1.title")}</h2>
       <Image
         className="image"
-        src="/images/ordermanagement1.png"
+        src="/images/menumanagement1.png"
         alt="intro ui image"
         width={1210}
         height={761}
@@ -23,14 +22,13 @@ const Ordermanagement = () => {
         }}
       />
       <div className="paragraph">{t("section1.paragraph")}</div>
-      <Notice title={t("section1.notice.title")} text1={t("section1.notice.sentence1")} text2={t("section1.notice.sentence2")}/>
 
       <div className="devider" />
       
       <h2 className="header">{t("section2.title")}</h2>
       <Image
         className="image"
-        src="/images/ordermanagement2.png"
+        src="/images/menumanagement2.png"
         alt="intro ui image"
         width={1210}
         height={761}
@@ -40,28 +38,13 @@ const Ordermanagement = () => {
         }}
       />
       <div className="paragraph">{t("section2.paragraph")}</div>
-       <IconBullet 
-        text={t("section2.bullet1")}
-        iconPath="/icons/gallery-horizontal-end.svg"
-        fullWidth={false}
-      />
-      <IconBullet 
-        text={t("section2.bullet2")}
-        iconPath="/icons/arrow-up-down.svg"
-        fullWidth={false}
-      />
-      <IconBullet 
-        text={t("section2.bullet3")}
-        iconPath="/icons/ticket-black.svg"
-        fullWidth={false}
-      />
 
       <div className="devider" />
 
       <h2 className="header">{t("section3.title")}</h2>
       <Image
         className="image"
-        src="/images/ordermanagement3.svg"
+        src="/images/menumanagement3.svg"
         alt="intro ui image"
         width={1210}
         height={761}
@@ -70,36 +53,61 @@ const Ordermanagement = () => {
           height: "auto",
         }}
       />
-      <div className="paragraph">{t("section3.paragraph")}</div>
        <IconBullet 
         text={t("section3.bullet1")}
-        iconPath="/icons/order-pink.svg"
+        iconPath="/icons/send.svg"
         autoInvert={false}
         fullWidth={false}
       />
       <IconBullet 
         text={t("section3.bullet2")}
-        iconPath="/icons/order-yellow.svg"
+        iconPath="/icons/package-check.svg"
         autoInvert={false}
         fullWidth={false}
       />
       <IconBullet 
         text={t("section3.bullet3")}
-        iconPath="/icons/order-green.svg"
-        autoInvert={false}
-        fullWidth={false}
-      />
-      <IconBullet 
-        text={t("section3.bullet4")}
-        iconPath="/icons/order-blue.svg"
+        iconPath="/icons/menu.svg"
         autoInvert={false}
         fullWidth={false}
       />
 
+      <div className="devider" />
+
+      <h2 className="header">{t("section4.title")}</h2>
+      <Image
+        className="image"
+        src="/images/menumanagement4.png"
+        alt="intro ui image"
+        width={1210}
+        height={761}
+        style={{
+          width: "100%",
+          height: "auto",
+        }}
+      />
+       <IconBullet 
+        text={t("section4.bullet1")}
+        iconPath="/icons/scan-eye.svg"
+        autoInvert={false}
+        fullWidth={false}
+      />
+      <IconBullet 
+        text={t("section4.bullet2")}
+        iconPath="/icons/letter-text.svg"
+        autoInvert={false}
+        fullWidth={false}
+      />
+      <IconBullet 
+        text={t("section4.bullet3")}
+        iconPath="/icons/list-collapse.svg"
+        autoInvert={false}
+        fullWidth={false}
+      />
 
       <div className="footer"/>
     </div>
   );
 };
 
-export default Ordermanagement;
+export default Menumanagement;

@@ -68,31 +68,51 @@
     }
   },
   "orderManagementPage": {
-  "section1": {
-    "title": "Order Management System",
-    "paragraph": "C-Canteen's order management system helps vendors manage orders efficiently and clearly. Vendors can accept or reject incoming orders, view real-time details like items, timestamps, and notes, and access past order history for tracking or analysis. The system also allows sorting by time or price, making it easier to manage food preparation queues.",
-    "notice": {
-      "title": "Important Notes",
-      "sencence1": "1. All orders shown have already been paid for by the customer.",
-      "sencence2": "2. Each order may include multiple menu items."
+    "section1": {
+      "title": "Order Management System",
+      "paragraph": "C-Canteen's order management system helps vendors manage orders efficiently and clearly. Vendors can accept or reject incoming orders, view real-time details like items, timestamps, and notes, and access past order history for tracking or analysis. The system also allows sorting by time or price, making it easier to manage food preparation queues.",
+      "notice": {
+        "title": "Important Notes",
+        "sentence1": "1. All orders shown have already been paid for by the customer.",
+        "sentence2": "2. Each order may include multiple menu items."
+      }
+    },
+    "section2": {
+      "title": "How to Access",
+      "paragraph": "Vendors can access the order system by tapping the ‘Manage Queue’ button on the Dashboard. Inside, they can switch between tabs to view ongoing and completed orders. Key features include:",
+      "bullet1": "Easily switch between active and completed orders via tabs",
+      "bullet2": "Sort orders by latest, earliest, lowest or highest price",
+      "bullet3": "Status indicators with color codes and contextual actions"
+    },
+    "section3": {
+      "title": "Order Status and Controls",
+      "paragraph": "Orders are categorized by 4 color-coded statuses to help vendors quickly understand their progress:",
+      "bullet1": "Pink: New orders waiting for response vendors can accept or reject",
+      "bullet2": "Yellow: Orders in progress can be marked complete or canceled (not recommended)",
+      "bullet3": "Green: Order is ready waiting for customer pickup",
+      "bullet4": "Blue: Order has been picked up by the customer"
     }
   },
-  "section2": {
-    "title": "How to Access",
-    "paragraph": "Vendors can access the order system by tapping the ‘Manage Queue’ button on the Dashboard. Inside, they can switch between tabs to view ongoing and completed orders. Key features include:",
-    "bullet1": "Easily switch between active and completed orders via tabs",
-    "bullet2": "Sort orders by latest, earliest, lowest or highest price",
-    "bullet3": "Status indicators with color codes and contextual actions"
-  },
-  "section3": {
-    "title": "Order Status and Controls",
-    "paragraph": "Orders are categorized by 4 color-coded statuses to help vendors quickly understand their progress:",
-    "bullet1": "Pink: New orders waiting for response vendors can accept or reject",
-    "bullet2": "Yellow: Orders in progress can be marked complete or canceled (not recommended)",
-    "bullet3": "Green: Order is ready waiting for customer pickup",
-    "bullet4": "Blue: Order has been picked up by the customer"
+  "menuManagementPage": {
+    "section1": {
+      "title": "Menu Management System",
+      "paragraph": "C-Canteen’s Menu Management System is designed to help vendors easily add, edit, or remove menu items in an organized and streamlined way. Vendors can set menu names, prices, add options or toppings, and control the availability status of each item. All menus are displayed directly to customers through the app, allowing vendors to maintain accurate and professional information in just a few simple steps."
+    },
+    "section2": {
+      "title": "Accessing the System",
+      "paragraph": "Vendors can access the menu management system through the 'Manage Menu' button on the dashboard. From there, they can search for specific menu items or toggle the order availability status for their shop."
+    },
+    "section3": {
+      "title": "Menu Controls",
+      "bullet1": "Vendors can choose whether to sell each menu item online by toggling the 'Online' button to change its availability status.",
+      "bullet2": "The 'Available' button lets vendors control whether an item is currently being sold both in-store and online.",
+      "bullet3": "The 'Show' button expands additional customization options for each menu item."
+    },
+    "section4": {
+      "title": "Adding a New Menu Item",
+      "bullet1": "Vendors can preview how the menu item will appear to customers via the display card at the top.",
+      "bullet2": "Basic customer-facing information can be entered using the general information form.",
+      "bullet3": "If additional options such as rice portion, spiciness level, or protein choices are needed, they can be added through the customization form."
+    }
   }
-}
-
-  
 }

@@ -5,6 +5,7 @@
   --background-40: #ffffff66;
   --foreground: #171717;
   --primary: #e06285;
+  --primary-24: #e0628518;
   --text-default: #333333;
   --text-light: #666666;
   --devider: #d1d1d1;
@@ -19,6 +20,7 @@
     --background-40: #33333366;
     --foreground: #ededed;
     --primary: #E68AA1;
+    --primary-24: #E68AA118;
     --text-default: #ffffff;
     --text-light: #cccccc;
     --devider: #575757;
