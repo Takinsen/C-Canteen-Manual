@@ -56,20 +56,14 @@ const Menumanagement = () => {
        <IconBullet 
         text={t("section3.bullet1")}
         iconPath="/icons/send.svg"
-        autoInvert={false}
-        fullWidth={false}
       />
       <IconBullet 
         text={t("section3.bullet2")}
         iconPath="/icons/package-check.svg"
-        autoInvert={false}
-        fullWidth={false}
       />
       <IconBullet 
         text={t("section3.bullet3")}
         iconPath="/icons/menu.svg"
-        autoInvert={false}
-        fullWidth={false}
       />
 
       <div className="devider" />
@@ -89,20 +83,14 @@ const Menumanagement = () => {
        <IconBullet 
         text={t("section4.bullet1")}
         iconPath="/icons/scan-eye.svg"
-        autoInvert={false}
-        fullWidth={false}
       />
       <IconBullet 
         text={t("section4.bullet2")}
         iconPath="/icons/letter-text.svg"
-        autoInvert={false}
-        fullWidth={false}
       />
       <IconBullet 
         text={t("section4.bullet3")}
         iconPath="/icons/list-collapse.svg"
-        autoInvert={false}
-        fullWidth={false}
       />
 
       <div className="footer"/>
