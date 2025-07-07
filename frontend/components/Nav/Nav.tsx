@@ -24,6 +24,8 @@ export default function Nav() {
     if (pathname?.includes('/storedashboard')) return 4;
     if (pathname?.includes('/ordermanagement')) return 5;
     if (pathname?.includes('/menumanagement')) return 6;
+    if (pathname?.includes('/promotionmanagement')) return 7
+    if (pathname?.includes('/storesetting')) return 8;
     return 0; 
   };
 
@@ -73,6 +75,8 @@ export default function Nav() {
         <Item text="Dashboard" onClick={() => handleSelect("/storedashboard")} selected={tabIndex === 4} iconPath="/icons/chart-spline.svg" />
         <Item text="Manage Order" onClick={() => handleSelect("/ordermanagement")} selected={tabIndex === 5} iconPath="/icons/wrap-text.svg" />
         <Item text="Manage Menu" onClick={() => handleSelect("/menumanagement")} selected={tabIndex === 6} iconPath="/icons/utensils.svg" />
+        <Item text="Manage Promo" onClick={() => handleSelect("/promotionmanagement")} selected={tabIndex === 7} iconPath="/icons/tags.svg" />
+        <Item text="Store Setting" onClick={() => handleSelect("/storesetting")} selected={tabIndex === 8} iconPath="/icons/settings.svg" />
       </div>
     </div>
   ) : (
@@ -90,6 +94,8 @@ export default function Nav() {
         <Item text="Dashboard" onClick={() => handleSelect("/storedashboard")} selected={tabIndex === 4} iconPath="/icons/chart-spline.svg" />
         <Item text="Manage Order" onClick={() => handleSelect("/ordermanagement")} selected={tabIndex === 5} iconPath="/icons/wrap-text.svg" />
         <Item text="Manage Menu" onClick={() => handleSelect("/menumanagement")} selected={tabIndex === 6} iconPath="/icons/utensils.svg" />
+        <Item text="Manage Promo" onClick={() => handleSelect("/promotionmanagement")} selected={tabIndex === 7} iconPath="/icons/tags.svg" />
+        <Item text="Store Setting" onClick={() => handleSelect("/storesetting")} selected={tabIndex === 8} iconPath="/icons/settings.svg" />
       </div>
     </div>
   );

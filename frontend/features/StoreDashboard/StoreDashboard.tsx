@@ -18,8 +18,8 @@ const StoreDashboard = () => {
         width={1210}
         height={761}
         style={{
-          width: "auto",
-          height: "522px",
+          width: "100%",
+          height: "auto",
         }}
       />
       <div className="paragraph">{t("section1.paragraph")}</div>
@@ -58,24 +58,24 @@ const StoreDashboard = () => {
         }}
       />
       <div className="paragraph">{t("section3.paragraph")}</div>
-      <BarBullet 
+      <BarBullet
         text={t("section3.sentence1")}
         header={t("section3.subtitle1")}
       />
-      <BarBullet 
+      <BarBullet
         text={t("section3.sentence2")}
         header={t("section3.subtitle2")}
       />
-      <BarBullet 
+      <BarBullet
         text={t("section3.sentence3")}
         header={t("section3.subtitle3")}
       />
-      <BarBullet 
+      <BarBullet
         text={t("section3.sentence4")}
         header={t("section3.subtitle4")}
       />
-     
-      <div className="footer"/>
+
+      <div className="footer" />
     </div>
   );
 };

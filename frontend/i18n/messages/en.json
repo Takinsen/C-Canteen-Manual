@@ -114,5 +114,28 @@
       "bullet2": "Basic customer-facing information can be entered using the general information form.",
       "bullet3": "If additional options such as rice portion, spiciness level, or protein choices are needed, they can be added through the customization form."
     }
+  },
+  "storeSettingPage": {
+  "section1": {
+    "title": "Store Settings",
+    "paragraph": "Vendors can edit their store information and system preferences through the Settings menu, which is divided into three sections: General, Payment, and Operating Hours."
+  },
+  "section2": {
+    "title": "Accessing the Settings",
+    "paragraph": "Vendors can access the store settings via the 'Store Settings' button on the dashboard. From there, they can preview how their store card appears to customers and switch between different settings tabs."
+  },
+  "section3": {
+    "title": "General Information",
+    "bullet1": "In the Information Card, vendors can edit basic details visible to customers, such as the store name, category, and other descriptions like contact information.",
+    "bullet2": "In the Service Settings Card, vendors can control order availability, set a limit on the number of concurrent orders, and manage store status — choosing between automatic open/close, temporary closure, or permanent closure."
+  },
+  "section4": {
+    "title": "Payment Details",
+    "paragraph": "In the Payment tab, vendors can upload a QR code image for their main payment account, and also enter a phone number to automatically generate a backup PromptPay QR code for customer payments."
+  },
+  "section5": {
+    "title": "Operating Hours",
+    "paragraph": "In the Operating Hours tab, vendors can specify which days the store is open by toggling the on/off switch, and set the opening and closing times for each day. Once configured, the system will automatically display the store’s open or closed status based on this schedule."
   }
+}
 }
